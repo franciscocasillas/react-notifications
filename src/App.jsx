@@ -6,17 +6,17 @@ import ReadNotificationButton from "./assets/components/ReadNotificationButton";
 
 function App() {
 	const [numberOfNotifications, setNumberOfNotifications] = useState(0);
-	const handleIncreaeNotificationsByOne = (numberOfNotifications) => {
-		setNumberOfNotifications((numberOfNotifications += 1));
+	const handleIncreaseNotificationsByOne = () => {
+		setNumberOfNotifications(numberOfNotifications + 1);
 	};
-	const handleDecreaseNotificationsByOne = (numberOfNotifications) => {
-		setNumberOfNotifications((numberOfNotifications -= 1));
+	const handleDecreaseNotificationsByOne = () => {
+		setNumberOfNotifications(numberOfNotifications - 1);
 	};
 
 	return (
 		<div>
 			<ReceiveNotificationButton
-				increaseNotificationsByOne={handleIncreaeNotificationsByOne}
+				increaseNotificationsByOne={handleIncreaseNotificationsByOne}
 			/>
 			<ReadNotificationButton
 				decreaseNotificationsByOne={handleDecreaseNotificationsByOne}
