@@ -1,0 +1,7 @@
+.hasNotifications {
+	background-color: rgb(200, 23, 23);
+}
+
+.noNotifications {
+	background-color: gray;
+}
